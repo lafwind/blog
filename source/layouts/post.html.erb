@@ -1,0 +1,10 @@
+<% wrap_layout :application do %>
+
+<h6><%= current_page.title%></h6>
+<p class="meta"><%= current_page.date.strftime("%b %e, %Y")%></p>
+
+<div class="post">
+  <%= yield %>
+</div>
+
+<% end %>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>Lafwind <%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <%= stylesheet_link_tag "main", "syntax", "syntax_jekyll" %>
+    <%= javascript_include_tag  "all" %>
+
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+  </head>
+  <body>
+
+    <div class="site">
+      <div class="header">
+        <h1 class="title"><a href="/">Lafwind's Blog</a></h1>
+        <a class="extra" href="/">Home</a>
+      </div>
+
+      <%= yield %>
+
+      <div class="footer">
+        <div class="contact">
+          <p>
+            My Github<br />
+            Follow Me at Twitter<br />
+            lafwind.github.io
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="https://github.com/lafwind">github.com/lafwind</a><br />
+            <a href="https://twitter.com/lafwind">twitter.com/lafwind</a><br />
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
