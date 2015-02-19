@@ -3,3 +3,7 @@ build/
 *~
 
 *.un~
+
+# for vim
+*~
+*swp
