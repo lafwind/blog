@@ -35,6 +35,16 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+configure :development do
+  activate :disqus do |d|
+    # using a special shortname
+    d.shortname = "lafwind-blog-dev"
+    # or setting to `nil` will stop Disqus loading
+    # d.shortname = nil
+  end
+end
+
+
 page "/feed.xml", layout: false
 
 page "/index.html", layout: :application
@@ -114,6 +124,11 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
+
+  activate :disqus do |d|
+    # using a different shortname for production builds
+    d.shortname = "lafwind"
+  end
 
   # Enable cache buster
   # activate :asset_hash
