@@ -48,6 +48,7 @@ end
 page "/feed.xml", layout: false
 
 page "/index.html", layout: :application
+page "/about.html", layout: :application
 page "/posts/*", layout: :post
 
 
@@ -111,11 +112,6 @@ set :relative_links, true
 #   end
 # end
 
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
