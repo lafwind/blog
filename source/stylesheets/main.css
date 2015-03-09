@@ -74,7 +74,10 @@ a:visited { color: #a0a; }
 }
 
 .title a {
-  color: #a00;
+  /*
+    color: #a00;
+  */
+  color: #22aaaa;
 }
 
 .title a:hover {

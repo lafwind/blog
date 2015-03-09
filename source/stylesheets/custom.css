@@ -1,7 +1,6 @@
 span.active {
 }
 
-
 .clearfix:after {
   content: " ";
   visibility: hidden;
@@ -10,21 +9,85 @@ span.active {
   clear: both;
 }
 
-/* intro */
-
-.about .intro {
+.about {
+  margin: 20px 0;
 }
 
-.about .intro .bio {
-  margin: 10px 0;
+
+.about h5 {
+  padding-bottom: 2px;
+  border-bottom: 1px #eee solid;
+}
+
+/* intro */
+
+
+.about .bio {
+  height: 100px;
+  margin: 20px 50px;
 }
 
 .bio img {
   display: inline-block;
   width: 100px;
   height: 100px;
-  border: 1px red solid;
+  margin: 0 10px;
+  float: left;
+  border: 1px gray solid;
   border-radius: 50%;
+}
+
+.bio span {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 20px 5px;
+}
+
+.about .intro {
+}
+
+/* skill */
+
+.dot-area {
+}
+
+.skill-name {
+  float: left;
+  margin: 5px 20px 5px 0;
+}
+
+.dot {
+  float: left;
+  margin: 5px 0;
+}
+
+.dot-full {
+  display: inline-block;
+  width: 10px;
+  height:10px;
+  border-radius: 50%;
+  border: 1px #22aaaa solid;
+  background: #22aaaa;
+}
+
+.dot-half {
+  display: inline-block;
+  width: 10px;
+  height:10px;
+  border-radius: 50%;
+  border: 1px #22aaaa solid;
+  background: linear-gradient(to right, #22aaaa 50%, #ffffff 50%);
+}
+
+.dot-empty {
+  display: inline-block;
+  width: 10px;
+  height:10px;
+  border-radius: 50%;
+  border: 1px #22aaaa solid;
+}
+
+.skill-detail {
 }
 
 /* project */
@@ -42,14 +105,14 @@ span.active {
 
 .about a {
   text-decoration: none;
-  color: #622;
+  color: #22aaaa;
 }
 
 .about a:hover {
   color: #123;
 }
 
-.about .project li a {
+.about .project li > a {
   display: inline-block;
   width: 200px;
 }
@@ -70,18 +133,21 @@ span.active {
 }
 
 .about .project li:hover .btn {
-  border: solid 1px #fee;
-  color: #666;
+  border: solid 1px #22aaaa;
+  color: #aaa;
 
+}
+.about .project li .btn:hover {
+  color: #000;
 }
 
 .about .project li .detail {
-  margin-left: 39px;
-  color: #999;
+  margin: 2px 0 2px 39px;
+  color: #aaa;
 }
 
 .about .project li:hover .detail {
-  color: #222;
+  color: #000;
 }
 
 li.more a {
@@ -90,7 +156,7 @@ li.more a {
   color: #ddd;
 }
 li.more a:hover {
-  color: #622;
+  color: #22aaaa;
 }
 
 /*
@@ -112,6 +178,8 @@ li.more a:hover {
   margin-right: 3em;
 }
 
+/*
 .contact a {
   color: #8085C1;
 }
+*/
