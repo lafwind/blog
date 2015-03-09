@@ -54,6 +54,7 @@ span.active {
 .skill-name {
   float: left;
   margin: 5px 20px 5px 0;
+  color: #aaa;
 }
 
 .dot {
@@ -106,6 +107,7 @@ span.active {
 .about a {
   text-decoration: none;
   color: #22aaaa;
+  transition: 0.5s;
 }
 
 .about a:hover {
@@ -129,12 +131,14 @@ span.active {
   border-radius: 5px;
   border: solid 1px #fff;
   color: #fff;
+  transition: 0.5s;
 
 }
 
 .about .project li:hover .btn {
   border: solid 1px #22aaaa;
   color: #aaa;
+  transition: 0.5s;
 
 }
 .about .project li .btn:hover {
@@ -144,18 +148,21 @@ span.active {
 .about .project li .detail {
   margin: 2px 0 2px 39px;
   color: #aaa;
+  transition: 0.5s;
 }
 
 .about .project li:hover .detail {
   color: #000;
 }
 
-li.more a {
+.about .project li.more a {
   display: inline-block;
   margin-left: 399px;
+  width:60px;
   color: #ddd;
+  transition: 0.5s;
 }
-li.more a:hover {
+.about .project li.more a:hover {
   color: #22aaaa;
 }
 
