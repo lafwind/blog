@@ -99,6 +99,7 @@ a:visited { color: #a0a; }
   color: #666;
   border-top: 4px solid #eee;
   margin-top: 2em;
+  padding-top: 2em;
   overflow: hidden;
 }
 

@@ -1,13 +1,6 @@
 span.active {
 }
-.contact {
-  float: left;
-  margin-right: 3em;
-}
 
-.contact a {
-  color: #8085C1;
-}
 
 .clearfix:after {
   content: " ";
@@ -15,4 +8,110 @@ span.active {
   display: block;
   height: 0;
   clear: both;
+}
+
+/* intro */
+
+.about .intro {
+}
+
+.about .intro .bio {
+  margin: 10px 0;
+}
+
+.bio img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px red solid;
+  border-radius: 50%;
+}
+
+/* project */
+
+.about .project ul {
+  list-style: none;
+  margin: 0;
+}
+
+.about .project li {
+  margin: 10px 20px;
+  padding-left: 10px;
+}
+
+
+.about a {
+  text-decoration: none;
+  color: #622;
+}
+
+.about a:hover {
+  color: #123;
+}
+
+.about .project li a {
+  display: inline-block;
+  width: 200px;
+}
+
+.about .project li .btn-space {
+  margin: 0 100px;
+}
+
+
+.about .project li .btn {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 5px;
+  border-radius: 5px;
+  border: solid 1px #fff;
+  color: #fff;
+
+}
+
+.about .project li:hover .btn {
+  border: solid 1px #fee;
+  color: #666;
+
+}
+
+.about .project li .detail {
+  margin-left: 39px;
+  color: #999;
+}
+
+.about .project li:hover .detail {
+  color: #222;
+}
+
+li.more a {
+  display: inline-block;
+  margin-left: 399px;
+  color: #ddd;
+}
+li.more a:hover {
+  color: #622;
+}
+
+/*
+.about a + .detail {
+  padding-left: 1em;
+  color: #123;
+}
+
+.about a:hover + .detail {
+  padding-left: 1em;
+  color: #999;
+}
+*/
+
+
+/* contact */
+.contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.contact a {
+  color: #8085C1;
 }
