@@ -10,13 +10,16 @@ span.active {
 }
 
 .about {
-  margin: 20px 0;
+  margin: 15px 36px;
+  padding: 15px 36px;
 }
 
 
 .about h5 {
+  margin-top: 30px;
   padding-bottom: 2px;
   border-bottom: 1px #eee solid;
+  font-weight: normal;
 }
 
 /* intro */
@@ -24,7 +27,8 @@ span.active {
 
 .about .bio {
   height: 100px;
-  margin: 20px 50px;
+  margin: 20px 100px;
+  text-align: center;
 }
 
 .bio img {
@@ -33,7 +37,7 @@ span.active {
   height: 100px;
   margin: 0 10px;
   float: left;
-  border: 1px gray solid;
+  border: 1px #eee solid;
   border-radius: 50%;
 }
 
@@ -46,20 +50,30 @@ span.active {
 .about .intro {
 }
 
+.about .intro .sayhi {
+  margin: 0px 20px;
+  padding-left: 10px;
+}
+
 /* skill */
 
+.skill {
+}
+
 .dot-area {
+  margin: 0px 20px;
+  padding-left: 10px;
 }
 
 .skill-name {
   float: left;
-  margin: 5px 20px 5px 0;
+  margin: 0 60px 0 0;
   color: #aaa;
 }
 
 .dot {
   float: left;
-  margin: 5px 0;
+  margin: 0;
 }
 
 .dot-full {
@@ -89,18 +103,19 @@ span.active {
 }
 
 .skill-detail {
+  margin: 0px 20px;
+  padding-left: 10px;
 }
 
 /* project */
 
 .about .project ul {
   list-style: none;
-  margin: 0;
+  margin: 0px 20px;
+  padding-left: 10px;
 }
 
 .about .project li {
-  margin: 10px 20px;
-  padding-left: 10px;
 }
 
 
@@ -180,9 +195,14 @@ span.active {
 
 
 /* contact */
+.contact-area {
+  margin: 0px 20px;
+  padding-left: 10px;
+}
+
 .contact {
   float: left;
-  margin-right: 3em;
+  margin-right: 60px;
 }
 
 /*

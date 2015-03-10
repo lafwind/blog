@@ -13,8 +13,9 @@
 
   <div class="intro">
     <h5>Welcome: </h5>
-    <p>Hi，我是Lafwind 。这是我的博客。</p>
-    <p></p>
+    <div class="sayhi">
+      <p>Hi，我是Lafwind 。这是我的博客。</p>
+    </div>
   </div>
 
   <div class="skill">
@@ -65,58 +66,62 @@
 
   <div class="project">
     <h5>Project: </h5>
-    <ul>
-      <li>
-        <%= link_to "Share Link", "https://github.com/lafwind/share_link" %>
-        <span class="btn-space">
-          <%= link_to 'source', '#', class: 'btn'%>
-        </span>
-        <div class="detail">
-          A place to share your links and find more cool sites.
-        </div>
-      </li>
-      <li>
-        <%= link_to "Todo List", "https://github.com/lafwind/todo_list" %>
-        <span class="btn-space">
-          <%= link_to 'source', '#', class: 'btn' %>
-        </span>
-        <div class="detail">
-          A simple todo list web app.
-        </div>
-      </li>
-      <li>
-        <%= link_to "Github detail", "https://github.com/lafwind/github_detail" %>
-        <span class="btn-space">
-          <%= link_to 'source', '#', class: 'btn'%>
-        </span>
-        <div class="detail">
-          Get info from your github.
-        </div>
-      </li>
-      <li class="more">
-        <%= link_to "More...", "https://github.com/lafwind" %>
-      </li>
-    </ul>
+    <p>
+      <ul>
+        <li>
+          <%= link_to "Share Link", "https://github.com/lafwind/share_link" %>
+          <span class="btn-space">
+            <%= link_to 'source', '#', class: 'btn'%>
+          </span>
+          <div class="detail">
+            A place to share your links and find more cool sites.
+          </div>
+        </li>
+        <li>
+          <%= link_to "Todo List", "https://github.com/lafwind/todo_list" %>
+          <span class="btn-space">
+            <%= link_to 'source', '#', class: 'btn' %>
+          </span>
+          <div class="detail">
+            A simple todo list web app.
+          </div>
+        </li>
+        <li>
+          <%= link_to "Github detail", "https://github.com/lafwind/github_detail" %>
+          <span class="btn-space">
+            <%= link_to 'source', '#', class: 'btn'%>
+          </span>
+          <div class="detail">
+            Get info from your github.
+          </div>
+        </li>
+        <li class="more">
+          <%= link_to "More...", "https://github.com/lafwind" %>
+        </li>
+      </ul>
+    </p>
   </div>
 
   <div>
     <h5>Contact me: </h5>
-    <div class="contact">
-      <p>
-        Email<br />
-        Follow Me at Twitter<br />
-        Follow Me at Github<br />
-        My Blog
-      </p>
-    </div>
+    <div class="contact-area">
+      <div class="contact">
+        <p>
+          Email<br />
+          Follow Me at Twitter<br />
+          Follow Me at Github<br />
+          My Blog
+        </p>
+      </div>
 
-    <div class="contact">
-      <p>
-        <%= link_to 'lafwind#gmail.com'%><br />
-        <%= link_to '@lafwind', 'https://twitter.com/lafwind' %><br />
-        <%= link_to '@lafwind', 'https://www.github.com/lafwind' %><br />
-        <%= link_to 'Lafwind\' blog', 'https://lafwind.github.io' %>
-      </p>
+      <div class="contact">
+        <p>
+          <%= link_to 'lafwind#gmail.com'%><br />
+          <%= link_to '@lafwind', 'https://twitter.com/lafwind' %><br />
+          <%= link_to '@lafwind', 'https://www.github.com/lafwind' %><br />
+          <%= link_to 'Lafwind\' blog', 'https://lafwind.github.io' %>
+        </p>
+      </div>
     </div>
   </div>
 
