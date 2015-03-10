@@ -117,9 +117,9 @@ h1.title a{
 }
 
 .content {
-  margin: 25px;
-  padding: 25px;
-  min-height: 250px;
+  margin: 15px 25px;
+  padding: 15px 25px;
+  min-height: 330px;
 }
 
 .footer {
