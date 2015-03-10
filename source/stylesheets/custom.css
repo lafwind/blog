@@ -67,8 +67,8 @@ span.active {
   width: 10px;
   height:10px;
   border-radius: 50%;
-  border: 1px #22aaaa solid;
-  background: #22aaaa;
+  border: 1px #03A9F5 solid;
+  background: #03A9F5;
 }
 
 .dot-half {
@@ -76,8 +76,8 @@ span.active {
   width: 10px;
   height:10px;
   border-radius: 50%;
-  border: 1px #22aaaa solid;
-  background: linear-gradient(to right, #22aaaa 50%, #ffffff 50%);
+  border: 1px #03A9F5 solid;
+  background: linear-gradient(to right, #03A9F5 50%, #ffffff 50%);
 }
 
 .dot-empty {
@@ -85,7 +85,7 @@ span.active {
   width: 10px;
   height:10px;
   border-radius: 50%;
-  border: 1px #22aaaa solid;
+  border: 1px #03A9F5 solid;
 }
 
 .skill-detail {
@@ -106,7 +106,7 @@ span.active {
 
 .about a {
   text-decoration: none;
-  color: #22aaaa;
+  color: #03a9f5;
   transition: 0.5s;
 }
 
@@ -136,7 +136,7 @@ span.active {
 }
 
 .about .project li:hover .btn {
-  border: solid 1px #22aaaa;
+  border: solid 1px #03a9f5;
   color: #aaa;
   transition: 0.5s;
 
@@ -163,7 +163,7 @@ span.active {
   transition: 0.5s;
 }
 .about .project li.more a:hover {
-  color: #22aaaa;
+  color: #03a9f5;
 }
 
 /*

@@ -13,19 +13,35 @@
 
     <div class="site">
       <div class="header">
-        <h1 class="title"><%= link_to 'Lafwind\'s Blog', '/' %></h1>
+        <h1 class="title">
+          <%= link_to 'Lafwind\'s blog', '/' %>
+        </h1>
+        <p>
+          A developer...
+        </p>
+      </div>
 
-        <span class=<%= "active" if current_page.path == "about.html" %>>
-          <%= link_to 'About', '/about.html', class: "extra" %>
+
+      <div class="nav">
+
+        <span class=<%= "active" if current_page.path == "index.html" %>>
+          <%= link_to 'Blogs', '/index.html', class: "nav-item" %>
         </span>
 
+        <span class=<%= "active" if current_page.path == "about.html" %>>
+          <%= link_to 'About', '/about.html', class: "nav-item" %>
+        </span>
+
+        <span class=<%= "active" if current_page.path == "feed.xml" %>>
+          <%= link_to 'Feed', '/feed.xml', class: "nav-item" %>
+        </span>
       </div>
 
       <%= yield %>
 
       <div class="footer">
         <div>
-          ©2015 Lafwind
+          ©Lafwind
         </div>
       </div>
     </div>
