@@ -24,11 +24,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
 
 h1 { margin-bottom: 1em; }
+
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a {
+  color: #666;
+}
+a:hover   {
+  color: #81d5fa;
+}
+a:visited {
+  text-decoration: none;
+}
 
 /*****************************************************************************/
 /*
@@ -37,14 +44,38 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 .posts {
   list-style-type: none;
-  margin-bottom: 2em;
+  margin-bottom: 20px;
 }
 
 .posts li {
   line-height: 30px;
 }
 
+.posts .article-title {
+  display: inline-block;
+  width: 80%;
+}
+
+.posts .article-title a {
+  color: #aaa;
+  transition: 0.5s;
+}
+
+.posts .article-title a:hover {
+  color: #03A9F5;
+}
+
+.posts .article-title a:visited {
+  color: #ccc;
+  transition: 0.5s;
+}
+
+.posts .article-title a:visited:hover {
+  color: #03A9F5;
+}
+
 .posts span {
+  display: inline-block;
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
@@ -93,9 +124,11 @@ h1.title a{
   font-size: 2em;
   font-weight: normal;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .title a:hover {
+  text-shadow: 1px 1px 0.1px #eee;
 }
 
 .header p {
@@ -113,10 +146,11 @@ h1.title a{
   margin: 0 5px;
   color: #aaa;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .nav .nav-item:hover {
-  color: #000;
+  color: #03A9F5;
 }
 
 .meta {
@@ -132,7 +166,7 @@ h1.title a{
 
 .footer {
   font-size: 80%;
-  color: #666;
+  color: #aaa;
   border-top: 1px solid #eee;
   padding: 20px 0;
   text-align: center;
@@ -163,6 +197,10 @@ h1.title a{
 .post-area {
   margin: 15px 36px;
   padding: 15px 36px;
+}
+
+.post-area h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
 }
 
 .post {
@@ -202,4 +240,15 @@ h1.title a{
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+
+/*****************************************************************************/
+/*
+/* Disqus
+/*
+/*****************************************************************************/
+
+#disqus_thread {
+  font-weight: normal !important;
 }
