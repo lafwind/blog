@@ -4,6 +4,13 @@
 /*
 /*****************************************************************************/
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
 /* Global Reset */
 * {
   margin: 0;
@@ -14,7 +21,8 @@ html, body { height: 100%; }
 
 body {
   background-color: #fdfdfd;
-  font: 13.34px Roboto Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font: 13.34px;
   font-size: small;
   text-align: center;
   word-break: normal;
@@ -53,7 +61,7 @@ a:visited {
 
 .posts .article-title {
   display: inline-block;
-  width: 80%;
+  width: 83%;
 }
 
 .posts .article-title a {
@@ -77,8 +85,11 @@ a:visited {
 .posts span {
   display: inline-block;
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+  /*
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 80%;
+  */
+  font-size: 90%;
 }
 
 .posts li a {
@@ -96,7 +107,7 @@ a:visited {
   font-size: 115%;
   text-align: justify;
   width: 699px;
-  margin: 80px auto 100px auto;
+  margin: 80px auto;
   line-height: 1.5em;
   border: 1px #eee solid;
   background-color: #fff;
@@ -210,10 +221,10 @@ h1.title a{
 
 .post pre {
   border: 1px solid #ddd;
-  background-color: #fff;
+  background-color: #fcfcfc;
   margin: 0 25px;
   padding: 5px 10px;
-  box-shadow: 0px 3px 5px #eee;
+  box-shadow: 0px 3px 5px #eaeaea;
   overflow: hidden;
 
 }
@@ -224,14 +235,17 @@ h1.title a{
 
 .post code {
   border: 1px solid #ddd;
-  background-color: #fff;
+  background-color: #fcfcfc;
   padding: 0 .2em;
 }
 
 .post pre code {
   border: none;
 }
-
+.post pre code span {
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;
