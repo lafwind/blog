@@ -5,6 +5,8 @@
 # Time.zone = "UTC"
 
 require "redcarpet"
+require "builder"
+
 
 activate :syntax
 
