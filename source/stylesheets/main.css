@@ -45,13 +45,18 @@ h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
 a {
-  color: #666;
+  color: #81d5fa;
+  text-decoration: none;
 }
 a:hover   {
-  color: #81d5fa;
+  color: #03A9F5;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
 }
 a:visited {
-  text-decoration: none;
 }
 
 /*****************************************************************************/
@@ -77,8 +82,14 @@ a:visited {
 
 .posts .article-title a {
   -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
   position: relative;
   overflow: hidden;
@@ -94,10 +105,19 @@ a:visited {
   background: #03A9F5;
   height: 1px;
   -webkit-transition-property: right;
+  -moz-transition-property: right;
+  -o-transition-property: right;
+  -ms-transition-property: right;
   transition-property: right;
   -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
   transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 
@@ -107,6 +127,10 @@ a:visited {
 .posts .article-title a {
   color: #aaa;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
 }
 
 .posts .article-title a:hover {
@@ -116,6 +140,10 @@ a:visited {
 .posts .article-title a:visited {
   color: #ccc;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
 }
 
 .posts .article-title a:visited:hover {
@@ -176,6 +204,10 @@ h1.title a{
   font-weight: normal;
   text-decoration: none;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
 }
 
 .title a:hover {
@@ -197,10 +229,20 @@ h1.title a{
   margin: 0 5px;
   color: #aaa;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
   text-decoration: none;
   -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
   position: relative;
   overflow: hidden;
@@ -216,10 +258,19 @@ h1.title a{
   background: #03A9F5;
   height: 1px;
   -webkit-transition-property: left, right;
+  -moz-transition-property: left, right;
+  -o-transition-property: left, right;
+  -ms-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
   transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 
