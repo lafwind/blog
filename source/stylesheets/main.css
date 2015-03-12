@@ -15,7 +15,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('../font/NotoSansCJKsc-Regular.otf');
+  src: url('../font/NotoSansCJKsc-Regular.otf') format('opentype');
   unicode-range: U+4E00-9FFF;
 }
 
