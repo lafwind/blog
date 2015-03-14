@@ -5,7 +5,7 @@
 /*****************************************************************************/
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Robot0';
   font-style: normal;
   font-weight: 300;
   src: url('../font/roboto/Roboto-Regular.ttf') format('truetype');
@@ -38,11 +38,11 @@ body {
   font-size: 14px;
   text-align: center;
   word-break: normal;
-  color: #316068;
+  color: #666;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+  color: #0288D1;
 }
 
 h1 { margin-bottom: 1em; }
@@ -130,7 +130,7 @@ a:visited {
   right: 0;
 }
 .posts .article-title a {
-  color: #aaa;
+  color: #03A9F5;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -140,10 +140,11 @@ a:visited {
 
 .posts .article-title a:hover {
   color: #03A9F5;
+  font-size: 16px;
 }
 
 .posts .article-title a:visited {
-  color: #ccc;
+  color: #c1c1c1;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -199,6 +200,7 @@ a:visited {
 
 
 .title {
+  font-size: 100%;
   width: 100%;
   display: inline-block;
 }
@@ -334,7 +336,19 @@ h1.title a{
   padding: 15px 36px;
 }
 
-.post-area h1, h2, h3, h4, h5, h6 {
+.post-area h1,
+.post-area h2,
+.post-area h3,
+.post-area h4,
+.post-area h5 {
+  display: inline-block;
+  font-weight: bolder;
+  color: #555;
+  padding-bottom: 3px;
+  border-bottom: 1px #555 solid;
+}
+
+.post-area h6 {
   font-weight: normal;
   font-size: 20px;
   color: #0288D1;
@@ -371,13 +385,21 @@ h1.title a{
   margin: 0 60px;
 }
 
+.post strong {
+  color: #3a3a3a;
+}
+
 .post code {
   border: 1px solid #ddd;
-  background-color: #fcfcfc;
-  padding: 0 .2em;
+  background-color: #f1f1f1;
+  padding: 0 0.2em;
+  margin: 0 2px;
+  border-radius: 3px;
 }
 
 .post pre code {
+  background-color: #fcfcfc;
+  word-wrap: break-word;
   border: none;
 }
 .post pre code span {
@@ -394,7 +416,6 @@ h1.title a{
 .post pre.terminal code {
   background-color: #333;
 }
-
 
 /*****************************************************************************/
 /*

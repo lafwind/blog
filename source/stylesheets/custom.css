@@ -20,6 +20,7 @@ span.active {
   padding-bottom: 2px;
   border-bottom: 1px #eee solid;
   font-weight: normal;
+  font-size: 100%;
 }
 
 /* intro */
