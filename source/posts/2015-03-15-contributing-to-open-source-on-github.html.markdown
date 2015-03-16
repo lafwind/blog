@@ -73,7 +73,7 @@ _假设你所要贡献代码的开源项目为**A**，具体流程如下：_
 
 执行好上述几个步骤即可以为开源项目提交代码。不过如果想见到这些修改真的合并到这个主项目。你还需要等待项目所有者的审核。如果ok，那就皆大欢喜。不ok的话，则你还可在继续修改，继续提交。一切由你。
 
-还有注意的是，经常看issue（可能是一些bug反馈，一些项目建议什么的）和pull request（并不是自己去pull request，而是看别人的，点击项目右边的相应链接，在code栏下），可以更好的融入到该项目的节奏中，也更好的达到协作开发的目的。推荐Github官方出品的[教程](https://guides.github.com/activities/contributing-to-open-source/)，更好的了解协作过程中的“礼仪”。
+还有注意的是，经常看issue（可能是一些bug反馈，一些项目建议什么的）和pull request（并不是自己去pull request，而是看别人的，点击项目右边的相应链接，在code栏下），可以更好的融入到该项目的节奏中，也更好的达到协作开发的目的。推荐Github官方出品的[教程](https://guides.github.com/activities/contributing-to-open-source/)和[10 tips for better Pull Requests](http://blog.ploeh.dk/2015/01/15/10-tips-for-better-pull-requests/)（[中文](http://www.oschina.net/news/59961/pull-reques-ten-suggestion)）这篇文章，更好的了解协作过程中的“礼仪”。
 
 好了，开始享受这份乐趣吧!
 
