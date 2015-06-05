@@ -183,9 +183,8 @@ a:visited {
   width: 750px;
   margin: 80px auto;
   line-height: 1.5em;
-  border: 1px #eee solid;
   background-color: #fff;
-  box-shadow: 0px 3px 30px #eee;
+  box-shadow: 0px 1px 100px #e1e1e1 ;
   overflow: hidden;
 }
 
@@ -193,8 +192,8 @@ a:visited {
   height: 2em;
   padding: 80px 0px;
   background-color: #03A9F5;
+  border: 1px #03A9F5;
   /* z-index: -1;*/
-  box-shadow: 0px 3px 20px #aaa;
   text-align: center;
 }
 
