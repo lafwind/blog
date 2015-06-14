@@ -1,20 +1,23 @@
 <div class="about">
-  <div class="title">
-    About Me
+  <h5>hello，此处施工中～！部分信息是乱填的～！具体信息以施工完结后为准～！！</h5>
+  <div class="bio">
+    <img src="http://tp3.sinaimg.cn/3211644054/180/5677586438/1" alt="bio-graph">
+    <span>
+      vimer, rubyist, linuxer
+      <br>
+      先这样~
+    </span>
   </div>
 
   <div class="clearfix">
   </div>
 
-  <p>Hello，我是Lafwind ，目前是南京大学计算机科学与技术系在读生一枚。</p>
-
-  <h5>Hobby: </h5>
-  <ul>
-    <li>编程</li>
-    <li>设计（web design）</li>
-    <li>羽毛球</li>
-    <li>观看各种比赛</li>
-  </ul>
+  <div class="intro">
+    <h5>Welcome: </h5>
+    <div class="sayhi">
+      <p>Hi，我是Lafwind 。这是我的博客。</p>
+    </div>
+  </div>
 
   <div class="skill">
     <h5>Skill: </h5>
@@ -68,25 +71,34 @@
       <ul>
         <li>
           <%= link_to "Share Link", "https://github.com/lafwind/share_link" %>
+          <span class="btn-space">
+            <%= link_to 'source', '#', class: 'btn'%>
+          </span>
           <div class="detail">
             A place to share your links and find more cool sites.
           </div>
         </li>
         <li>
           <%= link_to "Todo List", "https://github.com/lafwind/todo_list" %>
+          <span class="btn-space">
+            <%= link_to 'source', '#', class: 'btn' %>
+          </span>
           <div class="detail">
             A simple todo list web app.
           </div>
         </li>
         <li>
           <%= link_to "Github detail", "https://github.com/lafwind/github_detail" %>
+          <span class="btn-space">
+            <%= link_to 'source', '#', class: 'btn'%>
+          </span>
           <div class="detail">
             Get info from your github.
           </div>
         </li>
-        <div class="more">
-          <%= link_to "More", "https://github.com/lafwind" %>
-        </div>
+        <li class="more">
+          <%= link_to "More...", "https://github.com/lafwind" %>
+        </li>
       </ul>
     </p>
   </div>

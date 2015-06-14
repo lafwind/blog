@@ -12,15 +12,32 @@ span.active {
 .about {
   margin: 15px 36px;
   padding: 15px 36px;
+  color: #999;
 }
 
+.about .title {
+  font-size: 150%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
 
 .about h5 {
   margin-top: 30px;
-  padding-bottom: 2px;
+  padding-bottom: 10px;
   border-bottom: 1px #eee solid;
   font-weight: normal;
-  font-size: 100%;
+  font-size: 126%;
+  color: #666;
+}
+
+.about ul {
+  list-style: lower-greek;
+  margin-left: 39px;
+}
+
+.about ul li {
+  margin: 10px 0;
 }
 
 /* intro */
@@ -69,7 +86,6 @@ span.active {
 .skill-name {
   float: left;
   margin: 0 60px 0 0;
-  color: #aaa;
 }
 
 .dot {
@@ -111,7 +127,7 @@ span.active {
 /* project */
 
 .about .project ul {
-  list-style: none;
+  list-style: hebrew;
   margin: 0px 20px;
   padding-left: 10px;
 }
@@ -122,12 +138,12 @@ span.active {
 
 .about a {
   text-decoration: none;
-  color: #03a9f5;
-  transition: 0.5s;
+  color: #666;
+  transition: 0.2s;
 }
 
 .about a:hover {
-  color: #123;
+  color: #03a9f5;
 }
 
 .about .project li > a {
@@ -147,14 +163,14 @@ span.active {
   border-radius: 5px;
   border: solid 1px #fff;
   color: #fff;
-  transition: 0.5s;
+  transition: 0.2s;
 
 }
 
 .about .project li:hover .btn {
   border: solid 1px #03a9f5;
   color: #aaa;
-  transition: 0.5s;
+  transition: 0.2s;
 
 }
 .about .project li .btn:hover {
@@ -163,22 +179,28 @@ span.active {
 
 .about .project li .detail {
   margin: 2px 0 2px 39px;
-  color: #aaa;
-  transition: 0.5s;
+  color: #999;
+  transition: 0.2s;
 }
 
 .about .project li:hover .detail {
-  color: #000;
+  color: #666;
 }
 
-.about .project li.more a {
+
+.about .project .more a {
   display: inline-block;
   margin-left: 399px;
+  border: 1px solid #90caf9;
+  color: #90caf9;
+  border-radius: 50px;
+  padding: 5px 10px;
   width:60px;
-  color: #ddd;
-  transition: 0.5s;
+  text-align: center;
+  transition: 0.2s;
 }
-.about .project li.more a:hover {
+.about .project .more a:hover {
+  border: 1px solid #03a9f5;
   color: #03a9f5;
 }
 
