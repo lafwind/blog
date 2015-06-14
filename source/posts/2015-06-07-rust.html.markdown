@@ -20,15 +20,15 @@ Rust这门语言在它还是0.4版本的时候就听过，应该是看到一些�
 
 * 安装容易。因为自己是在Linux下安装的，照着官方的命令行安装教程，一条命令就足够了：
 
-```
-$ curl -sSf https://static.rust-lang.org/rustup.sh | sh
-```
+    ```shell
+     $ curl -sSf https://static.rust-lang.org/rustup.sh | sh
+    ```
 
 * Cargo很好用。利用Cargo可以很快的新建一个Rust项目，并进行项目的相关配置。这一点和Rails很像，这可能是由于Cargo的作者也具有Ruby的背景吧～
 
-```
-$ Cargo new hello --bin
-```
+    ```shell
+     $ Cargo new hello --bin
+    ```
 
 * 语法和C有点相似，但仅仅就是看起来像，细节内容方面还是不同的。个人还是比较喜欢这种风格的（还有`do...end`这样的）。
 

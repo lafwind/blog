@@ -76,7 +76,7 @@ a:visited {
 }
 
 .posts li {
-  line-height: 30px;
+  line-height: 33px;
 }
 
 .posts .article-title {
@@ -191,7 +191,7 @@ a:visited {
 
 .header {
   height: 2em;
-  padding: 80px 0px;
+  padding: 100px 0px;
   background-color: #03A9F5;
   border: 1px #03A9F5;
   /* z-index: -1;*/
@@ -314,12 +314,20 @@ h1.title a{
 }
 
 .footer {
-  font-size: 100%;
+  font-size: 90%;
   color: #aaa;
   border-top: 1px solid #eee;
-  padding: 20px 0;
+  padding: 39px 0;
   text-align: center;
   overflow: hidden;
+}
+
+.footer a {
+  color: #666666;
+}
+
+.footer a:hover {
+  color: #03A9F5;
 }
 
 
@@ -394,7 +402,7 @@ h1.title a{
 }
 
 .post ul, .post ol {
-  margin: 0 60px;
+  margin: 0 39px;
 }
 
 .post strong {
