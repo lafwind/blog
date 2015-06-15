@@ -148,7 +148,7 @@ span.active {
 
 .about .project li > a {
   display: inline-block;
-  width: 200px;
+  width: auto;
 }
 
 .about .project li .btn-space {
@@ -184,7 +184,7 @@ span.active {
 }
 
 .about .project li:hover .detail {
-  color: #666;
+  /*color: #666;*/
 }
 
 

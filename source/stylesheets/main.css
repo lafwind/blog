@@ -172,6 +172,19 @@ a:visited {
   color: #0288D1;
 }
 
+.page a.btn {
+  display: inline-block;
+  border: 1px solid #90caf9;
+  color: #90caf9;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.page a.btn:hover {
+  border: 1px solid #03a9f5;
+  color: #03a9f5;
+}
+
 /*****************************************************************************/
 /*
 /* Site
