@@ -37,7 +37,7 @@ p String.ancestors
 这就涉及到eigenclass，上面程序中，在A处为a对象定义了只属于a的方法（单件方法），而这些方法就存在a的eigenclass中，a是这个eigenclass的唯一实例（且eigenclass不能被继承）。再看代码：
 
 ```ruby
-
+# 给每个对象定义eigenclass方法
 class Object
   def eigenclass
     class << self
@@ -47,7 +47,6 @@ class Object
 end
 
 class M
-
   def hello
     puts "M"
   end
