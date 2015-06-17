@@ -48,6 +48,8 @@ end
 
 
 page "/feed.xml", layout: false
+page "/cv.html", layout: false
+page "/cv_to_print.html", layout: false
 
 page "/index.html", layout: :application
 page "/about.html", layout: :application

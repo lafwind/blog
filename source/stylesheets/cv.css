@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../font/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+  font-size: 14px;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #eeeeee;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.page {
+  padding: 5px 5%;
+}
+
+
+.page .header {
+  width: 100%;
+  height: 250px;
+  background-color: #222222;
+  color: #eeeeee;
+  text-align: center;
+}
+
+.page .header .header_title {
+  padding-top: 39px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.page .content {
+  background: #fff;
+  border: 1px solid #aaaaaa;
+  padding: 30px 60px;
+  height: auto;
+}
+
+.page .content a{
+  text-decoration: none;
+  color: #222222;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #222222;
+}
+
+.page .content a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.page .content .section {
+}
+
+.page .content .section::after {
+  display: block;
+  content: ' ';
+  clear: both;
+}
+
+.page .content .section .section_title {
+  font-size: 20px;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 5px;
+}
+
+.page .content .section .section_detail {
+  padding: 5px 100px;
+}
+
+.page .content .section .section_detail .key {
+  float: left;
+  padding: 0 100px 0 0;
+}
+
+.page .content .section .section_detail .value {
+  float: left;
+  padding: 0 5px;
+}
+
+.page .content .section .section_detail .item {
+  font-size: 16px;
+  color: #000;
+}
+
+.page .content .section .section_detail .intro {
+  color: #666;
+  padding-bottom: 10px;
+}
