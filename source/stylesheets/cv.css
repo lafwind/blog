@@ -131,15 +131,23 @@ a:hover {
 }
 
 .page .content .section .section_detail {
-  padding: 15px 0 15px 89px;
+  padding: 20px 0 20px 89px;
 }
 
-.page .content .section .section_detail .key {
+.page .content .section .section_detail_for_key {
+  padding: 0 0 0 89px;
+}
+
+.page .content .section .section_detail_for_key p {
+  margin: 20px auto;
+}
+
+.page .content .section .section_detail_for_key .key {
   float: left;
   padding: 0 100px 0 0;
 }
 
-.page .content .section .section_detail .value {
+.page .content .section .section_detail_for_key .value {
   float: left;
   padding: 0 5px;
 }
