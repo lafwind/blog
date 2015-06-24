@@ -4,9 +4,11 @@ date: 2015-06-22 15:52 UTC
 tags:
 ---
 
-其实，写这篇文章，自己有点心虚……首先，内容有点大；其次，我几乎没有在Rails中使用cache的经验= =，因为项目还没有这个需要T.T（Donald Knuth曾说过“过早的优化是万恶之源”，这是自我安慰吗～？），但是由于这几天都在看有关优化方面的内容，比如[How To Write Ruby Faster at the Source Code Level](http://thenewstack.io/how-to-write-ruby-faster-at-the-source-code-level/)，[fast-ruby](https://github.com/JuanitoFatas/fast-ruby)以及cache相关的内容，所以就想把相关内容记录下来，以备将来之需！
+其实，写这篇文章，自己有点心虚……首先，内容有点大；其次，我几乎没有在Rails中使用cache的经验= =，因为项目还没有这个需要T.T（Donald Knuth曾说过“过早的优化是万恶之源”，这是自我安慰吗～？），但是由于这几天都在看有关优化方面的内容，比如 [How To Write Ruby Faster at the Source Code Level](http://thenewstack.io/how-to-write-ruby-faster-at-the-source-code-level/)，[fast-ruby](https://github.com/JuanitoFatas/fast-ruby) 以及cache相关的内容，所以就想把相关内容记录下来，以备将来之需！
 
-就如上文所说，cache的内容有点多，有服务器端的、客户端的及一些页面相关的，在此次文章中，我主要想看看rails中的[Fragment Caching](http://guides.rubyonrails.org/caching_with_rails.html)。这种缓存是把视图逻辑中的一部分打包到cache块中，之后的请求就会从缓存中取得这部分的内容。比如在一个图片网站中（像[Impage](https://impage.herokuapp.com/) ; )），一般情况，图片的内容是不会变的，但是评论的内容则会慢慢增加，这种情况下，就可以将图片部分的相关视图缓存起来，而不用每次都像数据库发出请求，以此提高速度。代码方面如下：
+p.s.：之所以在未经充分实践就把文章写下来的最主要原因是：平时自己就喜欢乱看东西，比如曾经看了haskell，go等，但由于没有实践，现在都差不多忘了，以至于白白浪费了之前的学习，为了避免重蹈覆辙，决定把学到的东西（不管开始用没）记录下来，当之后用到时也能通过这些文章更快地进入状态，这也是我之前说的想要写博客的原因之一；而这也从另一方面督促自己，还有很多东西没做呢！要把时间花在刀刃上！
+
+言归正传，就如上文所说，cache的内容有点多，有服务器端的、客户端的及一些页面相关的，在此次文章中，我主要想看看rails中的[Fragment Caching](http://guides.rubyonrails.org/caching_with_rails.html)。这种缓存是把视图逻辑中的一部分打包到cache块中，之后的请求就会从缓存中取得这部分的内容。比如在一个图片网站中（像[Impage](https://impage.herokuapp.com/) ; )），一般情况，图片的内容是不会变的，但是评论的内容则会慢慢增加，这种情况下，就可以将图片部分的相关视图缓存起来，而不用每次都像数据库发出请求，以此提高速度。代码方面如下：
 
 ```haml
 # example
