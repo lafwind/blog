@@ -24,7 +24,7 @@ p.s.：之所以在未经充分实践就把文章写下来的最主要原因是�
 
 上面是一个使用fragment caching的例子，而cache[@post]会生成类似下列的key：
 
-`views/posts/3-20150616162219/2432435927aed37957c2139709`，这个键包含模型名，post的id和最后更新时间updated_at，所以当post出现更新时（即updated\_at更改），这个post才会生成一个新的缓存，而旧的缓存就不再管理，等到缓存满了后会利用LRU自动清理。
+`views/posts/3-20150616162219`，这个键包含模型名，post的id和最后更新时间updated_at，所以当post出现更新时（即updated\_at更改），这个post才会生成一个新的缓存，而旧的缓存就不再管理，等到缓存满了后会利用LRU自动清理。
 
 除了上述的自动更新缓存外，也可以利用`expire_fragment`方法来手动清除缓存。
 
