@@ -48,6 +48,7 @@ end
 
 
 page "/index.html", layout: false
+page "/wechat.html", layout: false
 page "/feed.xml", layout: false
 page "/resume.html", layout: false
 page "/resume_to_print.html", layout: false
