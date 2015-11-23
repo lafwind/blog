@@ -1,7 +1,7 @@
 @import './all.css.scss';
 
 #background {
-    background-image: url(../img/background.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -41,7 +41,7 @@
             padding-top: 1.5rem;
 
             .gravatar {
-                background: url(../img/gravatar.jpg);
+                background: url(../images/gravatar.jpg);
                 background-size: cover;
                 background-position: center;
                 height: 10rem;

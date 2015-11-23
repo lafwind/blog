@@ -3,29 +3,27 @@ pageable: true
 ---
 
 <div class="content">
-  <ul class="posts">
-  <% page_articles.each do |article| %>
-    <li>
-      <span class="article-title">
-        <%= link_to article.title, article %>
-      </span>
+    <% page_articles.each do |article| %>
+      <div class="blog_item">
+        <div class="blog_time"><%= article.date.strftime('%b %e, %Y') %></div>
+        <div class="blog_title">
+          <%= link_to article.title, article %>
+        </div>
+        <!-- use article.summary(250) if you have Nokogiri available to show just
+             the first 250 characters -->
+      </div>
 
-      <span><%= article.date.strftime('%b %e, %Y') %></span>
-  </li>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-  the first 250 characters -->
-  <% end %>
-  </ul>
-
-  <% if paginate && num_pages > 1 %>
-    <div class="page">
-      <% if prev_page %>
-        <%= link_to 'Previous', prev_page, class: "btn" %>
-      <% end %>
-      <% if next_page %>
-        <%= link_to 'Next', next_page, class: "btn" %>
-      <% end %>
-    </div>
-  <% end %>
-
+      <div class="bottom_line"></div>
+    <% end %>
 </div>
+
+<% if paginate && num_pages > 1 %>
+  <div class="paginate">
+    <% if prev_page %>
+      <%= link_to 'Previous', prev_page, class: "button" %>
+    <% end %>
+    <% if next_page %>
+      <%= link_to 'Next', next_page, class: "button" %>
+    <% end %>
+  </div>
+<% end %>
