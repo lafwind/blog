@@ -108,6 +108,10 @@
     .comments {
         margin: 3rem auto;
         width: 50%;
+
+        a {
+            color: $highlight;
+        }
     }
 
     footer {
