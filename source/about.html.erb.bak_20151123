@@ -1,0 +1,86 @@
+<div class="about">
+  <div class="title">
+    About Me
+  </div>
+
+  <div class="clearfix">
+  </div>
+
+  <p>Hello，我是Lafwind ，目前是南京大学计算机科学与技术系在读生一枚。</p>
+  <p>一个热爱编程、Ruby on Rails、生活、vim、音乐、阅读、羽毛球的程序员 ：)</p>
+
+  <h5>Hobby: </h5>
+  <ul>
+    <li>编程</li>
+    <li>设计（web design）</li>
+    <li>羽毛球</li>
+    <li>观看各种比赛</li>
+  </ul>
+
+  <div class="project">
+    <h5>I Do: </h5>
+    <p>
+      <ul>
+        <li>
+          <%= link_to "Share Link", "https://github.com/lafwind/share_link" %>
+          <div class="detail">
+            A place to share your links and find more cool sites.
+          </div>
+        </li>
+        <li>
+          <%= link_to "Impage", "https://github.com/lafwind/impage" %>
+          <div class="detail">
+            A page to share image.
+          </div>
+        </li>
+        <li>
+          <%= link_to "Simple weixin app", "https://github.com/lafwind/simple_weixin_app" %>
+          <div class="detail">
+            一个简单的微信公众号app。可返回用户输入中文/英文的翻译。
+          </div>
+        </li>
+        <li>
+          <%= link_to "Todo List", "https://github.com/lafwind/todo_list" %>
+          <div class="detail">
+            A simple todo list web app.
+          </div>
+        </li>
+        <li>
+          <%= link_to "Github detail", "https://github.com/lafwind/github_detail" %>
+          <div class="detail">
+            Get info from your github.
+          </div>
+        </li>
+        <div class="more">
+          <%= link_to "More", "https://github.com/lafwind" %>
+        </div>
+      </ul>
+    </p>
+  </div>
+
+  <div>
+    <h5>Contact Me: </h5>
+    <div class="contact-area">
+      <div class="contact">
+        <p>
+          Email<br />
+          Follow Me at Twitter<br />
+          Follow Me at Github<br />
+          My Blog
+        </p>
+      </div>
+
+      <div class="contact">
+        <p>
+          <%= link_to 'lafwind#gmail.com'%><br />
+          <%= link_to '@lafwind', 'https://twitter.com/lafwind' %><br />
+          <%= link_to '@lafwind', 'https://www.github.com/lafwind' %><br />
+          <%= link_to 'Lafwind\' blog', 'https://lafwind.github.io' %>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix">
+  </div>
+</div>

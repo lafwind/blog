@@ -47,12 +47,12 @@ configure :development do
 end
 
 
+page "/index.html", layout: false
 page "/feed.xml", layout: false
 page "/resume.html", layout: false
 page "/resume_to_print.html", layout: false
 
-page "/index.html", layout: :application
-page "/about.html", layout: :application
+page "/blog.html", layout: :blog
 page "/posts/*", layout: :post
 
 

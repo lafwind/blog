@@ -1,0 +1,64 @@
+$foreground: #ffffff;
+$background: #000000;
+$gray-white: #dddddd;
+$highlight: #e65360;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    height: 0;
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper_wide {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper_skinny {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.bottom_line {
+    border-bottom: 1px lighten($highlight, 30%) solid;
+}
+
+.button {
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: 1px lighten($highlight, 10%) solid;
+    color: lighten($highlight, 10%);
+    text-align: center;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    padding: .3rem 1.2rem;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: darken($highlight, 12%);
+        border: 1px darken($highlight, 12%) solid;
+    }
+}
+
+.bar_line {
+    height: .39rem;
+    width: 100%;
+    position: fixed;
+    background-color: $highlight;
+}

@@ -1,0 +1,95 @@
+@import './all.css.scss';
+
+#background {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+    color: $foreground;
+
+    header {
+        .wrapper {
+            height: 20vh;
+            nav {
+                background-color:rgba(22, 22, 22, 0.2);
+                ul {
+                    list-style: none;
+                    padding: 2rem 0;
+                    margin: 0;
+                    li {
+                        line-height: 2rem;
+                        display: inline-block;
+                        padding: .3rem 1rem;
+                        a {
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            color: $foreground;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        height: 80vh;
+        .content {
+            box-sizing: border-box !important;
+            min-height: 100%;
+            margin-bottom: -6rem;
+            padding-top: 1.5rem;
+
+            .gravatar {
+                background: url(../img/gravatar.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 10rem;
+                width: 10rem;
+                margin: 2rem auto;
+                border-radius: 5rem;
+                box-shadow: 0 0 0 0.8rem rgba(0, 0, 0, 0.10);
+            }
+
+            h1 {
+                padding: 1rem;
+                margin: 0;
+                font-weight: 400;
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 100;
+            }
+        }
+
+        .content:after {
+            content: "";
+            display: block;
+            height: 6rem;
+        }
+
+        footer {
+            height: 6rem;
+            // background-color:rgba(22, 22, 22, 0.2);
+            ul {
+                list-style: none;
+                padding: 2rem 0;
+                margin: 0;
+                li {
+                    line-height: 1rem;
+                    display: inline-block;
+                    padding: 0 2rem;
+                    a {
+                        text-decoration: none;
+                        color: $foreground;
+                        font-size: 2rem;
+                        span {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
