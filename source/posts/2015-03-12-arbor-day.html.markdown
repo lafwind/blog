@@ -4,7 +4,7 @@ date: 2015-03-12 06:55 UTC
 tags:
 ---
 
-![arbor-day-tree](../img/2015-03-12-arbor-day-01.jpg)
+![arbor-day-tree](../images/2015-03-12-arbor-day-01.jpg)
 
 今天开始正式写博客。恰逢植树节，以此为题。
 

@@ -64,43 +64,44 @@
             p {
                 line-height: 1.8rem;
                 color: lighten($background, 39%);
-                letter-spacing: .02rem;
+                letter-spacing: .05rem;
                 margin-bottom: 1rem;
             }
-        }
 
-        h1, h2, h3, h4, h5, h6 {
-            color: $highlight;
-        }
-
-        ul {
-            margin: 1rem 3rem;
-            li {
+            h1, h2, h3, h4, h5, h6 {
                 color: $highlight;
-                /* list-style: none; */
+            }
+
+            ul {
+                margin: 1rem 3rem;
+                li {
+                    color: $highlight;
+                    /* list-style: none; */
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $highlight;
+            }
+
+            img {
+                display: block;
+                margin: 3rem auto;
+                width: 60%;
+            }
+
+            pre {
+                background-color: lighten($gray-white, 10%);
+                font-family: Monaco, "Courier New", monospace, 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif;
+                font-size: 95%;
+                margin: 1rem 3rem;
+                padding: 1rem;
+                word-wrap: break-word;
+                border: none;
             }
         }
 
-        a {
-            text-decoration: none;
-            color: $highlight;
-        }
-
-        img {
-            display: block;
-            text-align: center;
-            margin: 2rem;
-        }
-
-        pre {
-            background-color: lighten($gray-white, 10%);
-            font-family: Monaco, "Courier New", monospace, 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif;
-            font-size: 95%;
-            margin: 1rem 3rem;
-            padding: 1rem;
-            word-wrap: break-word;
-            border: none;
-        }
 
     }
 
