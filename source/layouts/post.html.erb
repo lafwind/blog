@@ -1,16 +1,49 @@
 <%# wrap_layout :blog do %>
-
-<div class="post-area">
-  <h6><%= current_page.title%></h6>
-  <p class="meta"><%= current_page.date.strftime("%b %e, %Y")%></p>
-
-  <div class="post">
-    <%= yield %>
-  </div>
-
-
-  <%= disqus %>
-  <%= disqus_count %>
-</div>
-
 <%# end %>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>Lafwind<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <%= stylesheet_link_tag "all", "blog_article", "normalize", "syntax", "syntax_jekyll" %>
+    <%= javascript_include_tag  "all" %>
+
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+  </head>
+  <body>
+    <div id="blog_detail">
+      <div class="bar_line">
+      </div>
+      <header>
+        <nav>
+          <a href="./../blog.html"><span>&lt&lt</span> Blog</a>
+        </nav>
+      </header>
+      <div class="article">
+        <div class="blog_title">
+          <p><%= current_page.title %></p>
+        </div>
+        <div class="blog_time">
+          <p><%= current_page.date.strftime("%b %e, %Y")%></p>
+        </div>
+
+        <div class="content">
+          <%= yield %>
+        </div>
+
+      </div>
+
+      <div class="comments">
+        <%= disqus %>
+        <%= disqus_count %>
+      </div>
+
+      <footer>
+        <p>©2015 Lafwind </p>
+        <p>Theme is designed by <a href="./index.html">Lafwind</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

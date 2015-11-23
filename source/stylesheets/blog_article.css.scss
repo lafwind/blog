@@ -1,0 +1,98 @@
+@import './all.css.scss';
+
+#blog_detail {
+    header {
+        height: 10vh;
+        nav {
+            a {
+                margin-top: 3rem;
+                margin-left: 5rem;
+                display: inline-block;
+                border-radius: 3px;
+                padding: .6rem 1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                // color: lighten($background, 69%);
+                // border: 1px lighten($background, 69%) solid;
+                color: lighten($highlight, 10%);
+                border: 1px lighten($highlight, 10%) solid;
+                font-size: .8rem;
+                transition: all .3s ease-in-out;
+                left: 0;
+
+                span {
+                    left: 0;
+                    position: relative;
+                    -webkit-transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                }
+
+                &:hover {
+                    // color: lighten($highlight, 10%);
+                    // border: 1px lighten($highlight, 10%) solid;
+
+                    span {
+                        left: -0.3rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .article {
+        margin: 5rem auto;
+
+        .blog_title {
+            margin: 2rem auto;
+            font-size: 1.5rem;
+            text-align: center;
+            color: lighten($highlight, 10%);
+        }
+
+        .blog_time {
+            text-align: center;
+            margin: 2rem auto;
+            color: lighten($background, 60%);
+        }
+
+        .content {
+            width: 50%;
+            margin: 2rem auto;
+
+            p {
+                line-height: 1.8rem;
+                color: lighten($background, 39%);
+                letter-spacing: .02rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .comments {
+        margin: 3rem auto;
+        width: 50%;
+    }
+
+    footer {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        p {
+            margin-bottom: 1rem;
+            color: lighten($background, 66%);
+
+            a {
+                text-decoration: none;
+                color: lighten($background, 66%);
+                font-weight: 600;
+
+                &:hover {
+                    padding-bottom: .2rem;
+                    border-bottom: 1px lighten($background, 66%) solid;
+                }
+            }
+        }
+    }
+}
