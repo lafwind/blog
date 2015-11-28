@@ -1,3 +1,5 @@
+@import './normalize.css';
+
 $foreground: #ffffff;
 $background: #000000;
 $gray-white: #dddddd;
@@ -14,7 +16,7 @@ $highlight: #e65360;
 * {
     margin: 0;
     padding: 0;
-    font-family: "source-han-sans-simplified-c" !important, sans-serif;
+    font-family: "source-han-sans-simplified-c" !important;
 }
 
 .cf:before, .cf:after {
