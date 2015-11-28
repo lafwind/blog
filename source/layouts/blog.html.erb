@@ -7,6 +7,10 @@
     <%= stylesheet_link_tag "all", "blog", "normalize" %>
     <%= javascript_include_tag  "all" %>
 
+    <!-- source-han-sans-simplified-c -->
+    <script src="https://use.typekit.net/oqv5rhf.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body>
@@ -33,9 +37,5 @@
         <p>Theme is designed by <%= link_to 'Lafwind', './../index.html'%></p>
       </footer>
     </div>
-
-    <!-- source-han-sans-simplified-c -->
-    <script src="https://use.typekit.net/oqv5rhf.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </body>
 </html>

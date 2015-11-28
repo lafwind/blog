@@ -9,6 +9,10 @@
     <title>Lafwind<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= stylesheet_link_tag "all", "blog_article", "normalize", "syntax", "syntax_jekyll" %>
     <%= javascript_include_tag  "all" %>
+
+    <!-- source-han-sans-simplified-c -->
+    <script src="https://use.typekit.net/oqv5rhf.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <div id="blog_detail">
@@ -45,8 +49,5 @@
         <p>Theme is designed by <%= link_to 'Lafwind', './../index.html'%></p>
       </footer>
     </div>
-    <!-- source-han-sans-simplified-c -->
-    <script src="https://use.typekit.net/oqv5rhf.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </body>
 </html>
