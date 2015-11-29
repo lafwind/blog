@@ -5,6 +5,9 @@ $background: #000000;
 $gray-white: #dddddd;
 $highlight: #e65360;
 
+@import url('http://fonts.googleapis.com/earlyaccess/notosanssc.css');
+
+
 /* @font-face {font-family: 'source-han-sans-simplified-c'; */
 /*   src: url('//at.alicdn.com/t/guu30522lc8fr.eot'); /\* IE9*\/ */
 /*   src: url('//at.alicdn.com/t/guu30522lc8fr.eot?#iefix') format('embedded-opentype'), /\* IE6-IE8 *\/ */
@@ -13,11 +16,14 @@ $highlight: #e65360;
 /*   url('//at.alicdn.com/t/guu30522lc8fr.svg#NotoSansHans-DemiLight') format('svg'); /\* iOS 4.1- *\/ */
 /* } */
 
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "source-han-sans-simplified-c" !important;
+    font-family: 'Noto Sans SC', 'Noto Sans CJK', 'PingFang SC', 'PingFang TC', "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    /* font-family: "source-han-sans-simplified-c"; */
 }
+
 
 .cf:before, .cf:after {
     content: " ";
