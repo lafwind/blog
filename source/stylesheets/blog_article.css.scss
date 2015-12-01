@@ -95,11 +95,27 @@
                 background-color: lighten($gray-white, 10%);
                 font-family: Monaco, "Courier New", monospace, 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif !important;
                 font-size: 95%;
-		line-height: 1.5rem;
+                line-height: 1.5rem;
                 margin: 1rem 3rem;
                 padding: 1rem;
                 word-wrap: break-word;
                 border: none;
+            }
+
+            blockquote {
+                background-color: lighten($gray-white, 10%);
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding: 1rem 1.5rem;
+                color: lighten($background, 50%);
+
+                p {
+                    margin-bottom: .5rem;
+                }
+
+                ol {
+                    padding-left: 2.5rem;
+                }
             }
         }
 
