@@ -8,8 +8,10 @@
     text-align: center;
     background-color: $highlight;
     color: $foreground;
+    min-height: 38rem;
 
     header {
+        min-height: 6rem;
         .wrapper {
             height: 20vh;
             nav {
