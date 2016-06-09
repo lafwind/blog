@@ -1,0 +1,32 @@
+#blog_detail {
+    header {
+        nav {
+            a {
+                margin-top: 1rem;
+                margin-left: 1rem;
+                padding: .3rem .5rem;
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .article {
+        margin: 2rem auto;
+
+        .content {
+            width: 80%;
+
+            ul {
+                margin: 1rem 0 1rem 2.5rem;
+            }
+
+            pre {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    .comments {
+        width: 80%;
+    }
+}
