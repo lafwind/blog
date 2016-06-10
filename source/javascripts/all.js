@@ -7,5 +7,7 @@ $(document).ready(function(){
 
     $('.handle').on('click', function() {
         $('nav').toggleClass('show');
+        $('.fa').toggleClass('fa-bars');
+        $('.fa').toggleClass('fa-minus');
     });
 });
