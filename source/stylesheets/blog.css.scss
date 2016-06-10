@@ -5,9 +5,16 @@
     header {
         height: 50vh;
         background-color: $highlight;
+        min-height: 2.5rem;
+
+        .handle {
+            display: none;
+        }
 
         nav {
             height: 10vh;
+            min-height: 0.5rem;
+
             ul {
                 list-style: none;
                 padding-left: 2rem;
