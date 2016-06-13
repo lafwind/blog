@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="viewport" content="width=device-width" />
     <title>Lafwind<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= stylesheet_link_tag "all", "wechat", "normalize" %>
+    <%= stylesheet_link_tag "responsive_wechat", media: 'screen and ( max-width: 699px )' %>
     <%= javascript_include_tag  "all" %>
 
     <!-- Source Han Sans Simplified Chinese -->

@@ -1,0 +1,21 @@
+#wechat {
+
+    .bottom_line {
+        width: 69%;
+    }
+
+    .wrapper {
+        .wechat_img {
+            padding-top: 3.6rem;
+            margin-bottom: -3rem;
+        }
+    }
+
+    .wechat_img:after {
+        height: 3rem;
+    }
+
+    footer {
+        height: 3rem;
+    }
+}
