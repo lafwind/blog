@@ -3,6 +3,8 @@ build/
 *~
 *.un~
 
+.sass-cache/
+
 # for vim
 *~
 *swp
