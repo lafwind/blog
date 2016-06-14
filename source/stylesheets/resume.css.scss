@@ -1,0 +1,181 @@
+@import './all.css.scss';
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../font/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+    font-size: 14px;
+    // font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif;
+    line-height: 1.3em;
+}
+
+a {
+    text-decoration: none;
+    color: $foreground;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $foreground;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.page {
+    height: 100%;
+    padding: 0;
+}
+
+
+.page .header {
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    background-color: $highlight;
+    color: $foreground;
+    text-align: center;
+}
+
+.page .header::after {
+    display: block;
+    content: ' ';
+    clear: both;
+}
+
+.page .header p {
+    font-size: 14px;
+}
+
+.page .header .arrow {
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 30px;
+    width: 39px;
+    height: 39px;
+    border: 1px solid $foreground;
+    border-radius: 50%;
+}
+
+.page .header .arrow a {
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+    display: inline-block;
+    border-bottom: none;
+    font-size: 1.2rem;
+    width: 39px;
+    height: 39px;
+    // border: 1px solid $foreground;
+    padding-top: 6px;
+    // border-radius: 50%;
+    position: relative;
+    top: 2px;
+
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.page .header .arrow a:hover {
+    color: #ffffff;
+    top: 6px;
+}
+
+.page .header .header_title {
+    font-size: 39px;
+    padding-bottom: 20px;
+}
+
+.page .header .header_intro {
+    font-size: 14px;
+}
+.page .header .header_intro {
+    line-height: 1.8em;
+}
+
+.page .content {
+    background: #ffffff;
+    padding: 50px 23%;
+    height: auto;
+}
+
+.page .content a{
+    text-decoration: none;
+    color: #222222;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #222222;
+    font-size: 14px;
+}
+
+.page .content a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.page .content .section {
+}
+
+.page .content .section::after {
+    display: block;
+    content: ' ';
+    clear: both;
+}
+
+.page .content .section .section_title {
+    font-size: 20px;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 10px;
+}
+
+.page .content .section .section_detail {
+    padding: 20px 0 20px 89px;
+}
+
+.page .content .section .section_detail_for_key {
+    padding: 0 0 0 89px;
+}
+
+.page .content .section .section_detail_for_key p {
+    margin: 20px auto;
+}
+
+.page .content .section .section_detail_for_key .key {
+    float: left;
+    padding: 0 100px 0 0;
+}
+
+.page .content .section .section_detail_for_key .value {
+    float: left;
+    padding: 0 5px;
+}
+
+.page .content .section .section_detail .item {
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.page .content .section .section_detail .intro {
+    color: #666;
+    padding-bottom: 20px;
+}
