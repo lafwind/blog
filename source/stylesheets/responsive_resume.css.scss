@@ -1,0 +1,36 @@
+.page {
+    .header {
+        padding-top: 16vh;
+
+        .header_title {
+            font-size: 25px;
+        }
+
+        p {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    .content {
+        padding: 50px 5%;
+
+        .section {
+            .section_detail {
+                padding: 10px 0 10px 5%;
+            }
+
+            .section_detail_for_key {
+                padding: 10px 0 10px 5%;
+
+                .key {
+                    display: block;
+                }
+
+                .value {
+                    display: block;
+                }
+            }
+        }
+    }
+}
