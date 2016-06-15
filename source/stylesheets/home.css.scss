@@ -1,12 +1,12 @@
 @import './all.css.scss';
 
 #background {
-    // background-image: url(../images/background.jpg);
-    // background-size: cover;
-    // background-position: center;
-    // min-height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    // background-color: $highlight;
     text-align: center;
-    background-color: $highlight;
     color: $foreground;
     min-height: 38rem;
 
