@@ -1,0 +1,139 @@
+@import './all.css.scss';
+
+@mixin button-set($color) {
+    .button {
+        color: $color;
+    }
+
+    .button-highlight {
+        background: $color;
+        color: $foreground;
+        border: 1px $foreground solid;
+    }
+}
+
+$green: #2e9a50;
+$orange: #ee7836;
+
+#projects {
+    box-sizing: border-box !important;
+    color: $foreground;
+    .wrapper {
+        height: 100vh;
+        min-height: 100%;
+        // width: 100vw;
+        // min-width: 100%;
+        text-align: center;
+    }
+
+    .highlight {
+        background: $highlight;
+    }
+
+    .green {
+        background: $green;
+
+        @include button-set($green);
+
+    }
+
+    .orange {
+        background: $orange;
+
+        @include button-set($orange);
+    }
+}
+
+header {
+    height: 100vh;
+    min-height: 100vh;
+
+    .logo {
+        height: 15vh;
+        line-height: 15vh;
+        text-align: left;
+        font-size: 1rem;
+        margin-left: 2rem;
+        // display: inline-block;
+        // border: 1px $foreground solid;
+    }
+
+    .title {
+        height: 70vh;
+        line-height: 70vh;
+        text-align: center;
+        font-size: 6rem;
+    }
+
+
+    a {
+        color: $foreground;
+        text-decoration: none;
+    }
+}
+
+footer {
+    height: 100vh;
+    min-height: 100vh;
+    color: $background;
+
+    .banner {
+        height: 70vh;
+        line-height: 70vh;
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    .nav {
+        a {
+            color: $background;
+            border-color: $background;
+        }
+    }
+}
+
+.nav {
+    text-align: right;
+    margin-right: 2rem;
+    height: 15vh;
+    line-height: 15vh;
+
+    a {
+        text-decoration: none;
+        color: $foreground;
+        display: inline-block;
+        border: 1px $foreground solid;
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        font-size: .8rem;
+        border-radius: 100%;
+        text-align: center;
+    }
+}
+
+
+.project {
+    height: 70vh;
+    box-sizing: border-box !important;
+    padding-top: 10vh;
+    .project_title {
+        font-size: 3rem;
+        margin-bottom: 5vh;
+    }
+
+    .project_detail {
+        font-size: 1.2rem;
+        margin-bottom: 10vh;
+    }
+}
+
+.button {
+    background: $foreground;
+    border: none;
+    margin: 1rem;
+
+    &:hover {
+        border: none;
+    }
+}

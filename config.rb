@@ -52,6 +52,7 @@ page "/wechat.html", layout: false
 page "/feed.xml", layout: false
 page "/resume.html", layout: false
 page "/resume_to_print.html", layout: false
+page "/projects.html", layout: false
 
 page "/blog.html", layout: :blog
 page "/posts/*", layout: :post
