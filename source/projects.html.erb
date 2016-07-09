@@ -7,6 +7,7 @@
     <title>Lafwind<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= stylesheet_link_tag "all", "project", "normalize" %>
     <%= stylesheet_link_tag "responsive_project", media: 'screen and ( max-width: 699px )' %>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <%= javascript_include_tag  "all" %>
 
     <!-- Source Han Sans Simplified Chinese -->
@@ -17,7 +18,7 @@
   <body>
     <div id="projects">
 
-      <header class="highlight">
+      <header  class="highlight top">
         <div class="logo">
           <%= link_to 'Lafwind', './index.html' %>
         </div>
@@ -25,13 +26,13 @@
           <span class="title">Project</span>
         </div>
         <div class="nav">
-          <a href="#p1">&#9660</a>
+          <a href="#" class="to_p1">&#9660</a>
         </div>
       </header>
 
-      <div class="wrapper green">
+      <div class="wrapper green p1">
         <div class="nav">
-          <a href="#p1">&#9650</a>
+          <a href="#" class="to_top">&#9650</a>
         </div>
 
         <div class="project">
@@ -46,13 +47,13 @@
         </div>
 
         <div class="nav">
-          <a href="#p1">&#9660</a>
+          <a href="#" class="to_p2">&#9660</a>
         </div>
       </div>
 
-      <div class="wrapper orange">
+      <div class="wrapper orange p2">
         <div class="nav">
-          <a href="#p1">&#9650</a>
+          <a href="#" class="to_p1">&#9650</a>
         </div>
 
         <div class="project">
@@ -68,13 +69,13 @@
         </div>
 
         <div class="nav">
-          <a href="#p1">&#9660</a>
+          <a href="#" class="to_footer">&#9660</a>
         </div>
       </div>
 
-      <footer>
+      <footer class="footer">
         <div class="nav">
-          <a href="#p1">&#9650</a>
+          <a href="#" class="to_p2">&#9650</a>
         </div>
 
         <div class="banner">
