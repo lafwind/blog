@@ -16,14 +16,29 @@ $green: #2e9a50;
 $orange: #ee7836;
 
 #projects {
+
     box-sizing: border-box !important;
     color: $foreground;
+
+    .top_button {
+        position: fixed;
+        left: 2rem;
+        display: none;
+    }
+
+    .nav.top_button.bottom {
+        a {
+            border-color: $background;
+            color: $background;
+        }
+    }
+
     .wrapper {
         height: 100vh;
-        min-height: 100%;
         // width: 100vw;
         // min-width: 100%;
         text-align: center;
+        min-height: 400px;
     }
 
     .highlight {
@@ -46,7 +61,7 @@ $orange: #ee7836;
 
 header {
     height: 100vh;
-    min-height: 100vh;
+    min-height: 400px;
 
     .logo {
         height: 15vh;
@@ -63,6 +78,7 @@ header {
         line-height: 70vh;
         text-align: center;
         font-size: 6rem;
+        min-height: 275px;
     }
 
 
@@ -74,14 +90,15 @@ header {
 
 footer {
     height: 100vh;
-    min-height: 100vh;
     color: $background;
+    min-height: 400px;
 
     .banner {
         height: 70vh;
         line-height: 70vh;
         font-size: 6rem;
         text-align: center;
+        min-height: 275px;
     }
 
     .nav {
@@ -117,6 +134,8 @@ footer {
     height: 70vh;
     box-sizing: border-box !important;
     padding-top: 10vh;
+    min-height: 275px;
+
     .project_title {
         font-size: 3rem;
         margin-bottom: 5vh;
