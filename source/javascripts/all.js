@@ -23,6 +23,8 @@ $(document).ready(function(){
     click_go_to('top');
     click_go_to('p1');
     click_go_to('p2');
+    click_go_to('p3');
+    click_go_to('p4');
     click_go_to('footer');
 
     $(window).scroll( function() {

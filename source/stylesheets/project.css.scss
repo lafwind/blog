@@ -14,6 +14,8 @@
 
 $green: #2e9a50;
 $orange: #ee7836;
+$lighten-blue: #16afad;
+$purple: #6558a1;
 
 #projects {
 
@@ -57,6 +59,16 @@ $orange: #ee7836;
 
         @include button-set($orange);
     }
+
+    .lighten-blue {
+        background: $lighten-blue;
+        @include button-set($lighten-blue);
+    }
+
+    .purple {
+        background: $purple;
+        @include button-set($purple);
+    }
 }
 
 header {
@@ -89,6 +101,7 @@ header {
 }
 
 footer {
+    background-color: darken($foreground, 10%);
     height: 100vh;
     color: $background;
     min-height: 400px;
@@ -99,6 +112,10 @@ footer {
         font-size: 6rem;
         text-align: center;
         min-height: 275px;
+
+        a {
+            color: $background;
+        }
     }
 
     .nav {
@@ -142,7 +159,8 @@ footer {
     }
 
     .project_detail {
-        font-size: 1.2rem;
+        margin: auto 2rem;
+        font-size: 1rem;
         margin-bottom: 10vh;
     }
 }

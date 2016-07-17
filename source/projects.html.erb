@@ -7,6 +7,7 @@
     <title>Lafwind<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= stylesheet_link_tag "all", "project", "normalize" %>
     <%= stylesheet_link_tag "responsive_project", media: 'screen and ( max-width: 699px )' %>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <%= javascript_include_tag  "all" %>
 
@@ -41,14 +42,14 @@
 
         <div class="project">
           <div class="project_title">
-            Project 1
+            WhatsUp
           </div>
           <div class="project_detail">
-            Blablablablablal
+            一个收藏、发现有趣网站的网络收藏夹，可对书签进行分组，并自行决定公开或私有书签。用Rails（已升级到 Rails 5.0.0）搭建，利用 Devise gem 实现用户登入，通过 Google 的 smtp 服务器发送激活等相关邮件。用户可对书签进行投票（acts_as_votable）及排序（按不同标准）等功能。前端使用 HTML/CSS（SCSS） 及 jQuery 实现；数据库采用 PostgreSQL。用 Git 进行整个开发的版本控制。
           </div>
 
-          <%= link_to 'Website', './index.html', class: 'button'%>
-          <%= link_to 'Source', './index.html', class: 'button button-highlight'%>
+          <%= link_to 'Website', 'https://what-s-up.herokuapp.com/', target: "_blank", class: 'button'%>
+          <%= link_to 'Source', 'https://www.github.com/lafwind/what-s-up', target: "_blank", class: 'button button-highlight'%>
         </div>
 
         <div class="nav">
@@ -63,14 +64,58 @@
 
         <div class="project">
           <div class="project_title">
-            Project 1
+            Join
           </div>
           <div class="project_detail">
-            Blablablablablal
+            一个网络聊天室。利用 Rails 5 及 ActionCable 搭建，并使用 Devise 完成用户注册和登录。前端页面利用 Bootstrap，并进行个性化修改；数据库采用 PostgreSQL，ActionCable 采用 Redis 作为 adapter；利用 Docker 相关技术部署在 DaoCloud 上。
           </div>
 
-          <%= link_to 'Website', './index.html', class: 'button'%>
-          <%= link_to 'Source', './index.html', class: 'button button-highlight'%>
+          <%= link_to 'Website', 'http://lafwind-chat.daoapp.io', target: "_blank", class: 'button'%>
+          <%= link_to 'Source', 'https://www.github.com/lafwind/chat', target: "_blank", class: 'button button-highlight'%>
+        </div>
+
+        <div class="nav">
+          <a href="#" class="to_p3">&#9660</a>
+        </div>
+      </div>
+
+      <div class="wrapper lighten-blue p3">
+        <div class="nav">
+          <a href="#" class="to_p2">&#9650</a>
+        </div>
+
+        <div class="project">
+          <div class="project_title">
+            Impage
+          </div>
+          <div class="project_detail">
+            利用 Rails 搭建的一个分享图片网站。用 Devise 等 gem 实现用户登录、投票、收藏、添加标签等功能。页面访问量统计用Redis实现。用 Haml、Sass 完成前端开发；数据库采用 PostgreSQL；利用 Docker 相关技术进行部署。
+          </div>
+
+          <%= link_to 'Website', 'http://impage.daoapp.io', target: "_blank", class: 'button'%>
+          <%= link_to 'Source', 'https://www.github.com/lafwind/impage', target: "_blank", class: 'button button-highlight'%>
+        </div>
+
+        <div class="nav">
+          <a href="#" class="to_p4">&#9660</a>
+        </div>
+      </div>
+
+      <div class="wrapper purple p4">
+        <div class="nav">
+          <a href="#" class="to_p3">&#9650</a>
+        </div>
+
+        <div class="project">
+          <div class="project_title">
+            My blog
+          </div>
+          <div class="project_detail">
+            利用 Middleman 搭建的个人网站，包括主页、博客、简历、项目列表等个人相关内容。前端界面皆由 HTML、SCSS、jQuery 设计编写，针对不同屏幕尺寸完成响应式设计；集成 Disqus 评论功能。
+          </div>
+
+          <%= link_to 'Website', 'http://lafwind.github.io', target: "_blank", class: 'button'%>
+          <%= link_to 'Source', 'https://www.github.com/lafwind/blog', target: "_blank", class: 'button button-highlight'%>
         </div>
 
         <div class="nav">
@@ -78,13 +123,17 @@
         </div>
       </div>
 
+
       <footer class="footer">
         <div class="nav">
-          <a href="#" class="to_p2">&#9650</a>
+          <a href="#" class="to_p4">&#9650</a>
         </div>
 
         <div class="banner">
-          <span class="banner">On the Road!</span>
+          <span class="banner">
+            <% link_to 'https://github.com/lafwind' do %>
+              <span class="fa fa-github">
+            <% end %>n the Road!</span>
         </div>
       </footer>
     </div>

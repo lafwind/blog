@@ -106,6 +106,8 @@
                 color: lighten($highlight, 10%);
             }
             .blog_title {
+                margin: 0 auto;
+                width: 90%;
                 a {
                     color: lighten($background, 36%);
                     text-decoration: none;
