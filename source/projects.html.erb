@@ -35,31 +35,9 @@
         </div>
       </header>
 
-      <div class="wrapper green p1">
+      <div class="wrapper orange p1">
         <div class="nav">
           <a href="#" class="to_top">&#9650</a>
-        </div>
-
-        <div class="project">
-          <div class="project_title">
-            WhatsUp
-          </div>
-          <div class="project_detail">
-            一个收藏、发现有趣网站的网络收藏夹，可对书签进行分组，并自行决定公开或私有书签。用Rails（已升级到 Rails 5.0.0）搭建，利用 Devise gem 实现用户登入，通过 Google 的 smtp 服务器发送激活等相关邮件。用户可对书签进行投票（acts_as_votable）及排序（按不同标准）等功能。前端使用 HTML/CSS（SCSS） 及 jQuery 实现；数据库采用 PostgreSQL。用 Git 进行整个开发的版本控制。
-          </div>
-
-          <%= link_to 'Website', 'https://what-s-up.herokuapp.com/', target: "_blank", class: 'button'%>
-          <%= link_to 'Source', 'https://www.github.com/lafwind/what-s-up', target: "_blank", class: 'button button-highlight'%>
-        </div>
-
-        <div class="nav">
-          <a href="#" class="to_p2">&#9660</a>
-        </div>
-      </div>
-
-      <div class="wrapper orange p2">
-        <div class="nav">
-          <a href="#" class="to_p1">&#9650</a>
         </div>
 
         <div class="project">
@@ -75,9 +53,32 @@
         </div>
 
         <div class="nav">
+          <a href="#" class="to_p2">&#9660</a>
+        </div>
+      </div>
+
+      <div class="wrapper green p2">
+        <div class="nav">
+          <a href="#" class="to_p1">&#9650</a>
+        </div>
+
+        <div class="project">
+          <div class="project_title">
+            WhatsUp
+          </div>
+          <div class="project_detail">
+            一个收藏、发现有趣网站的网络收藏夹，可对书签进行分组，并自行决定公开或私有书签。用Rails（已升级到 Rails 5.0.0）搭建，利用 Devise 实现用户登入及发送激活邮件等；搭建相应后台进行管理。用户可对书签进行投票（acts_as_votable）及排序（按不同标准）等功能。前端使用 HTML/CSS（SCSS） 及 jQuery 实现；数据库采用 PostgreSQL。用 Git 进行整个开发的版本控制。
+          </div>
+
+          <%= link_to 'Website', 'http://what-s-up.daoapp.io/', target: "_blank", class: 'button'%>
+          <%= link_to 'Source', 'https://www.github.com/lafwind/what-s-up', target: "_blank", class: 'button button-highlight'%>
+        </div>
+
+        <div class="nav">
           <a href="#" class="to_p3">&#9660</a>
         </div>
       </div>
+
 
       <div class="wrapper lighten-blue p3">
         <div class="nav">
